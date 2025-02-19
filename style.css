@@ -1,0 +1,110 @@
+:root {
+    --wrapper-color: #37000A;
+    --display-background-color: black;
+    --button-color: ;
+    --text-color: #F15574;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+        url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    background-color: var(--wrapper-color);
+    width: 30rem;
+    border-radius: 1rem;
+    box-shadow: #222933 10px 10px 50px, #5d708b -10px -10px 50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    border-radius: 1rem;
+    color: var(--text-color);
+    margin: 1rem;
+}
+
+.page-title {
+    font-size: 10rem;
+    font-family: "Sigmar";
+    font-weight: bold;
+    color: var(--text-color);
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background: url('./popcorn.webp') center/cover no-repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#movie-input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    border: var(--text-color) 1px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#movie-input:focus {
+    outline-width: 0;
+}
+
+.inputField {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.submitbtn {
+    font-size: 2rem;
+    user-select: none;
+}
+
+.movieArea {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.remove-all-btn {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #F15574;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.remove-all-btn:hover {
+    background-color: #D14363;
+}
